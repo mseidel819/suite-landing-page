@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import { StyledButtonPrimary } from "./button-primary.styles";
 
 const ButtonPrimary = () => {
