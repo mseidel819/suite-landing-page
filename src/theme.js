@@ -27,12 +27,13 @@ export const themeOptions = createTheme({
     fontFamily: '"Epilogue" , sans-serif',
     h1: {
       fontWeight: 400,
-      fontSize: 26,
+      fontSize: 72,
       lineHeight: 1.08,
+      letterSpacing: -1,
     },
     h2: {
-      fontSize: 49,
-      fontWeight: 400,
+      fontSize: 48,
+      fontWeight: 700,
       lineHeight: 1.16,
     },
     h3: {
@@ -47,6 +48,15 @@ export const themeOptions = createTheme({
     },
     body1: {
       fontSize: 18,
+      lineHeight: 1.78,
+      letterSpacing: ".1px",
+    },
+    body2: {
+      fontSize: 16,
+      lineHeight: 1.62,
+      letterSpacing: "2.5px",
+      color: "#49566D",
+      textTransform: "uppercase",
     },
     button: {
       fontSize: 18,
