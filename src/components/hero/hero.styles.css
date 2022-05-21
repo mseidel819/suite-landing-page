@@ -1,5 +1,6 @@
 .hero-svg {
   transform: translateX(265px);
+  width: 400px;
 }
 
 .hero-p {

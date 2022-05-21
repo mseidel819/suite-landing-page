@@ -11,14 +11,15 @@ const Hero = () => {
       <Grid container>
         <Grid
           item
-          sm={10}
+          md={10}
+          sm={12}
           xs={12}
           sx={{
             marginBottom: "50px",
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: { xs: "none", sm: `url(${heroImage})` },
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            backgroundPosition: "500px",
+            backgroundPosition: { sm: "380px", md: "444px" },
           }}
         >
           <div className="hero-svg">
@@ -43,6 +44,7 @@ const Hero = () => {
         <Grid
           item
           xs={12}
+          md={2}
           sx={{ display: { sm: "none" }, marginBottom: "56px" }}
         >
           <CardMedia component="img" image={phoneImg} alt="hero phone" />

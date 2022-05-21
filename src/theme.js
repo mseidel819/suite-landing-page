@@ -58,6 +58,13 @@ export const themeOptions = createTheme({
       color: "#49566D",
       textTransform: "uppercase",
     },
+    subtitle1: {
+      fontSize: 20,
+      lineHeight: 1.75,
+      fontWeight: 400,
+      letterSpacing: ".1px",
+      color: "#F3EDE7",
+    },
     button: {
       fontSize: 18,
       fontWeight: 700,
