@@ -1,3 +1,18 @@
 .lil-curve {
   width: 64px;
 }
+.jeremy-card {
+  z-index: 10;
+}
+.blur {
+  position: relative;
+  top: 150px;
+  left: -130px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 900px) {
+  .lil-curve {
+    transform: translateY(-100px);
+  }
+}
