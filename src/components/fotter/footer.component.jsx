@@ -12,7 +12,9 @@ const Footer = () => {
         <Grid
           container
           rowSpacing={4}
-          sx={{ justifyContent: { xs: "center", sm: "space-between" } }}
+          sx={{
+            justifyContent: { xs: "center", sm: "space-between" },
+          }}
         >
           <Grid item xs={12} sm={2} sx={{ textAlign: "center" }}>
             <Logo />

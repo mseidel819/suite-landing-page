@@ -7,7 +7,7 @@ import heroImage from "../../assets/image-hero-portrait@2x.webp";
 
 const Hero = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ marginBottom: { xs: "100px" } }}>
       <Grid container>
         <Grid
           item
@@ -15,11 +15,12 @@ const Hero = () => {
           sm={12}
           xs={12}
           sx={{
-            marginBottom: "50px",
+            marginBottom: { xs: "50px", sm: "100px", md: "50px" },
+            padding: { md: "80px 0", sm: "20px 0" },
             backgroundImage: { xs: "none", sm: `url(${heroImage})` },
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            backgroundPosition: { sm: "380px", md: "444px" },
+            backgroundPosition: { sm: "400px", md: "404px" },
           }}
         >
           <div className="hero-svg">
@@ -53,10 +54,11 @@ const Hero = () => {
           rowSpacing={4}
           item
           container
-          md={2}
+          md={1.5}
           xs={12}
           justifyContent="center"
           alignItems="center"
+          sx={{ padding: { md: "100px 0" } }}
         >
           <Grid item xs={12} sm={4} md={12}>
             <Typography
