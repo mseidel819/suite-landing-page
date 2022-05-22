@@ -11,6 +11,5 @@ export const StyledButtonPrimary = styled(Button)({
     backgroundImage:
       "linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%)",
     transition: "all .3s",
-    transition: "background-color 0s",
   },
 });
