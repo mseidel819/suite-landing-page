@@ -6,9 +6,6 @@ import Hero from "./components/hero/hero.component";
 import Jeremy from "./components/jeremy/jeremy.component";
 import Footer from "./components/fotter/footer.component";
 
-import ButtonPrimary from "./components/buttons/button-primary.component";
-import ButtonSecondary from "./components/buttons/button-secondary.component";
-
 function App() {
   return (
     <ThemeProvider theme={themeOptions}>

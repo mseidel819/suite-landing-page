@@ -6,7 +6,6 @@ export const StyledButtonPrimary = styled(Button)({
   padding: "15px 31px",
   backgroundImage: "none",
   transition: "all .3s",
-  transition: "background-color 0s",
 
   "&:hover": {
     backgroundImage:
