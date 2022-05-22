@@ -7,22 +7,27 @@ import "./jeremy.styles.css";
 const Jeremy = () => {
   return (
     <>
-      <CardMedia
-        component="img"
-        image={jeremyImg}
-        alt="jeremy"
-        sx={{
-          height: "589px",
-          width: "auto",
-          position: "relative",
-          top: "542px",
-          left: "150px",
-          marginTop: "-542px",
-          maginLeft: "-150px",
-          overflow: "visible",
-          zIndex: "3",
-        }}
-      />
+      <Container maxWidth="lg">
+        <CardMedia
+          component="img"
+          image={jeremyImg}
+          alt="jeremy"
+          sx={{
+            height: "589px",
+            width: "auto",
+            position: "relative",
+
+            top: { md: "542px", xs: "442px" },
+            left: { md: "50px", xs: "0" },
+            margin: { xs: "0px auto", md: "0 0" },
+            marginTop: { xs: "-442px", md: "-542px" },
+            maginLeft: "-50px",
+            overflow: "visible",
+            zIndex: "3",
+          }}
+        />
+      </Container>
+
       <Container maxWidth="lg">
         <Card>
           <Grid
@@ -31,11 +36,16 @@ const Jeremy = () => {
             alignItems="center"
             rowSpacing={4}
             sx={{
-              padding: { xs: "0 16px", sm: "0 58px", md: "0px 125px" },
+              padding: {
+                xs: "50px 16px",
+                sm: "50px 58px",
+                md: "50px 125px 50px 125px",
+              },
+
               zIndex: 3,
             }}
           >
-            <Grid item md={5}>
+            <Grid item xs={12} md={5}>
               <div className="blur">
                 <Blur />
               </div>
@@ -45,7 +55,7 @@ const Jeremy = () => {
                 <LilCurve />
               </div>
             </Grid>
-            <Grid item md={5}>
+            <Grid item xs={12} md={5}>
               <Typography
                 variant="h2"
                 color="text.secondary"

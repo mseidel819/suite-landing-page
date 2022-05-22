@@ -1,4 +1,4 @@
-import { Container, Grid, CardMedia, Typography, Box } from "@mui/material";
+import { Container, Grid, CardMedia, Typography } from "@mui/material";
 import phoneImg from "../../assets/image-hero-landscape@2x.webp";
 import { ReactComponent as Curve } from "../../assets/pattern-curved-line-1.svg";
 import ButtonPrimary from "../buttons/button-primary.component";
