@@ -1,4 +1,4 @@
-import { Container, Grid, Typography, Button } from "@mui/material";
+import { Container, Grid, Typography, Link } from "@mui/material";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { ReactComponent as Facebook } from "../../assets/icon-facebook.svg";
 import { ReactComponent as Instagram } from "../../assets/icon-instagram.svg";
@@ -24,19 +24,19 @@ const Footer = () => {
           </Grid>
           <Grid item container xs={8} sm={2} sx={{ textAlign: "center" }}>
             <Grid item xs={4}>
-              <Button>
+              <Link href="#">
                 <Facebook />
-              </Button>
+              </Link>
             </Grid>
             <Grid item xs={4}>
-              <Button>
+              <Link href="#">
                 <Twitter />
-              </Button>
+              </Link>
             </Grid>
             <Grid item xs={4}>
-              <Button>
+              <Link href="#">
                 <Instagram />
-              </Button>
+              </Link>
             </Grid>
           </Grid>
         </Grid>
